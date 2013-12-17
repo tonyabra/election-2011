@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+	<title>Election Results</title>
+
+	<script type="text/javascript">
+	var mayorValues = new Array(140362, 54342, 323546, 52483, 5291, 9604); 
+	var clerkValues = new Array(216127, 322443);
+	var wardValues = [	"start", 
+	                  	"Joe Moreno", 
+	                  	"Bob Fioretti", 
+	                  	"Pat Dowell", 
+						"Will Burns", 
+						"Leslie Hairston", 
+						"Freddrenna Lyle and Roderick Sawyer", 
+						"Sandi Jackson", 
+						"Michelle Harris", 
+						"Anthony Beale", 
+						"John Pope", /* 10 */ 
+						"James Balcer", 
+						"George Cardenas", 
+						"Marty Quinn", 
+						"Edward Burke", 
+						"Toni Foulkes and Raymond Lopez", 
+						"Hal Baskin and JoAnn Thompson", 
+						"David Moore and Latasha Thomas", 
+						"Lona Lane", 
+						"Matthew O'Shea", 
+						"Willie Cochran and Che Smith", /* 20 */ 
+						"Howard Brookins", 
+						"Ricardo Munoz", 
+						"Michael Zalewski", 
+						"Michael Chandler and Sharon Dixon", 
+						"Cuahutemoc Morfin and Danny Solis", 
+						"Roberto Maldonado", 
+						"Walter Burnett", 
+						"Jason Ervin", 
+						"Deborah Graham", 
+						"Ariel Reboyras", /* 30 */
+						"Ray Suarez", 
+						"Scott Waguespack", 
+						"Richard Mell", 
+						"Carrie Austin", 
+						"Rey Colon", 
+						"John Rice and Nicholas Sposato", 
+						"Emma Mitts", 
+						"Tom Caravette and Timothy Cullerton", 
+						"Margaret Laurino", 
+						"Patrick O'Connor", /* 40 */
+						"Maurita Gavin and Mary O'Connor", 
+						"Brendan Reilly", 
+						"Tim Egan and Michele Smith", 
+						"Thomas Tunney", 
+						"John Arena and John Garrido", 
+						"James Cappleman and Molly Phelan", 
+						"Ameya Pawar", 
+						"Harry Osterman", 
+						"Joe Moore", 
+						"Debra 	Silverstein and Bernard Stone"];
+	</script>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  
+    <script src="./scripts/raphael-min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./scripts/g.raphael-min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./scripts/g.pie.js" type="text/javascript" charset="utf-8"></script>
+ 
+    <script src="./scripts/scripts.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="./scripts/jquery.selectbox-0.5.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./css/selectbox.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    
+</head>
+
+<body>
+	<div id="chartPad">
+	</div>
+	
+	
+	<div id="mapWrapper">
+		<div id="wardBlock">
+			<p><span id="wardTitle">&nbsp;</span><span id="wardWinner">Hover over wards for results.</span></p>
+		</div>
+		
+		<div id="mapPad">
+		</div>
+		
+		<div id="mapKey">
+			<ul>
+			  <li>: Not Yet Called</li>
+			  <li>: Uncontested</li>
+			  <li>: Called</li>
+			  <li>: Runoff</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="selectBoxWrapper">
+		<select id="dropDown">
+			<option selected="selected" value="mayor">Mayor</option>
+			<option value="clerk">City Clerk</option>
+			<option value="alderman">Alderman</option>
+		</select>
+	</div>
+	
+	<p id="helpText">(Click above to change race)</p>
+	
+	<p id="precincts">100% of precincts reporting</p>
+	
+</body>
+
+</html>
+

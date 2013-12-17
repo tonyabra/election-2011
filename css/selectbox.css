@@ -1,0 +1,63 @@
+/* Drop down styles*/
+div.selectbox-wrapper {
+  position: absolute;
+  z-index: 100;
+  width:500px;
+  background-color:white;
+  border: 1px solid #999999;
+  margin:0px;
+  margin-top: -10px;
+  padding:0px;
+  text-align:left;
+  max-height:300px;
+  overflow:auto;
+}
+
+/*Drop down list styles*/
+div.selectbox-wrapper ul {
+  list-style-type:none;
+  margin:0px;
+  padding:0px;
+}
+/* Selected item in dropdown list*/
+div.selectbox-wrapper ul li.selected { 
+  background-color: #99b0c3;
+}
+
+/* Hover state for dropdown list */
+div.selectbox-wrapper ul li.current { 
+  background-color: #6a808e;
+}
+
+/* Drop down list items style*/
+div.selectbox-wrapper ul li {
+  list-style-type:none;
+  display:block;
+  margin:0;
+  padding:2px;
+  font-size: 24px;
+  cursor:pointer;
+  font-family: arial;
+}
+
+/* Look and feel of select box */
+.selectbox 
+{
+  margin: 0px 5px 10px 0px;
+  padding-bottom: 12px;
+  padding-left:2px;
+  font-size:30px;/* Resize Font*/
+  width : 336px; /* Resize Width */
+  display : block;
+  text-align:left; 
+  background: url('bg_select.png') right;
+  cursor: pointer;
+  border: none;
+  color:#333;
+}
+
+.selectboxFloater{
+  float: right;
+  margin-right: 5px;
+}
+
